@@ -1,7 +1,0 @@
-version: "2.2"
-services:
-  nginx:
-    image: nginx
-    scale: 5
-    ports:
-      - "80-85:80"
