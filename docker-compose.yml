@@ -1,0 +1,20 @@
+version: '2.2'
+services:
+  sample_webapp:
+    container_name: tomcat
+    image: 15689876/app_web2:v1.0
+    ports:
+      - "9081:8080"
+
+  httpd:
+    container_name: httpd
+    image: httpd
+    ports:
+      - "9082:80"
+
+  rabbitmq:
+    container_name: rmq
+    image: rabbitmq:3-management
+    ports:
+      - "9083:15672"
+
